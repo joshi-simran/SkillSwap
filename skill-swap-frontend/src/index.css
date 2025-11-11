@@ -1,0 +1,56 @@
+:root{
+  --green-1: #045149;
+  --green-2: #21664d;
+  --teal:    #00a3a7;
+  --mint:    #cfe8e6;
+  --cream:   #f3efe8;
+  --gray-1:  #e8ebee;
+  --text:    #123233;
+  --radius:  12px;
+  --pad:     18px;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; font-family: Inter, system-ui, Arial, sans-serif; color:var(--text); }
+body{ background: linear-gradient(180deg, var(--cream) 0%, var(--mint) 100%); min-height:100vh; padding:40px; }
+a{ text-decoration:none; color: var(--green-2); }
+
+.container{ max-width: 1080px; margin: 0 auto; min-height: calc(100vh - 80px); display:flex; flex-direction:column; }
+.header{ display:flex; align-items:center; justify-content:space-between; margin-bottom: 16px; }
+.brand{ display:flex; gap:12px; align-items:center; }
+.logo{ width:48px; height:48px; border-radius:8px; background: linear-gradient(180deg,var(--green-1),var(--green-2)); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; }
+.nav{ display:flex; gap:16px; }
+.nav a{ padding:8px 10px; background:white; border-radius:8px; box-shadow: 0 4px 14px rgba(17,24,39,0.06); font-size:16px; }
+.nav .link-btn{ padding:8px 10px; background:white; border-radius:8px; box-shadow: 0 4px 14px rgba(17,24,39,0.06); border:none; cursor:pointer; color: var(--green-2); font-size: 16px; }
+.nav .btn{ font-size:16px; }
+
+.card{ background:white; border-radius: var(--radius); padding: var(--pad); box-shadow: 0 6px 18px rgba(17,24,39,0.08); }
+.card.home{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:16px; margin:0; }
+.card h2{ margin-bottom:12px; }
+.card h3{ margin: 6px 0 8px 0; }
+.grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+.input{ width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--gray-1); }
+.btn{ padding:10px 14px; border-radius:8px; background:var(--green-2); color:white; border:none; cursor:pointer; }
+.searchbar{ display:flex; gap:8px; margin-bottom:12px; }
+.skill-grid{ display:grid; gap:12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.skill{ background: linear-gradient(180deg, white, var(--gray-1)); padding:12px; border-radius:10px; display:flex; flex-direction:column; gap:10px; }
+.skill h4{ color: var(--green-1); margin:0; }
+.meta{ font-size:12px; color:#5b6b6a; }
+label{ display:block; font-size:13px; margin-bottom:6px; color:#274b47; }
+textarea{ min-height:80px; resize:vertical; padding:8px; border-radius:8px; border:1px solid var(--gray-1); }
+
+/* Key-value emphasis rows for card readability */
+.kv-row{ display:flex; gap:8px; align-items:baseline; font-size:14px; }
+.kv-row strong{ font-weight:700; color: var(--green-1); font-size:15px; }
+
+/* Subtle separator */
+.sep{ border-top:1px solid #e0e0e0; margin:8px 0; }
+
+/* Action row used across cards */
+.actions{ display:flex; justify-content:center; align-items:center; gap:12px; margin-top:8px; }
+
+/* Clean lists (no bullets) for meta lists */
+ul.meta{ list-style:none; padding-left:0; }
+ul.meta li{ margin:4px 0; }
+
+/* Uniform section spacing and dividers */
+.section{ margin-top:16px; padding-top:8px; border-top:1px solid #e0e0e0; }
