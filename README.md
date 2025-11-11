@@ -1,4 +1,4 @@
-# SkillSwap — Full-Stack Starter
+# SkillSwap 
 
 Frontend: React + Vite  
 Backend: Node/Express + MongoDB
@@ -28,3 +28,8 @@ Ensure `.env` values:
 - Frontend `VITE_API_URL=http://localhost:5000/api`
 
 Production: build frontend (`npm run build`) and either serve via separate static host or copy `skill-swap-frontend/dist` into `skill-swap-backend/public` and set `SERVE_CLIENT=true`.
+
+### Created By
+Shubashitha Gowtham
+Simran Joshi
+Sruthi Vejju
